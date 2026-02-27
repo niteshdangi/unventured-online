@@ -1,0 +1,2652 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.37870317697525024,
+        0.5,
+        0.9944546818733215
+      ],
+      "min": [
+        -0.42301344871520996,
+        -0.5031650066375732,
+        -0.02344319224357605
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 192,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 128,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 384,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.37870317697525024,
+        0.5,
+        1.0000190734863281
+      ],
+      "min": [
+        -0.42301344871520996,
+        -0.5031650066375732,
+        -0.017878711223602295
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 576,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 256,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 256,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 384,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 96,
+      "componentType": 5125,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 768,
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.12183068692684174,
+        0.11097545176744461,
+        0.7424195408821106
+      ],
+      "min": [
+        -0.09336359798908234,
+        -0.13411864638328552,
+        0.6186538338661194
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 960,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 512,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 192,
+      "componentType": 5125,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1152,
+      "componentType": 5126,
+      "count": 8,
+      "max": [
+        0.14317284524440765,
+        0.10807166248559952,
+        0.6971979141235352
+      ],
+      "min": [
+        -0.15322615206241608,
+        -0.14757011830806732,
+        0.0010972712188959122
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1248,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 512,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 640,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 704,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 288,
+      "componentType": 5125,
+      "count": 12,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1344,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.16143403947353363,
+        0.14204493165016174,
+        0.8155816793441772
+      ],
+      "min": [
+        -0.20591475069522858,
+        -0.21362845599651337,
+        0.46420595049858093
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1632,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 768,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 336,
+      "componentType": 5125,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1920,
+      "componentType": 5126,
+      "count": 12,
+      "max": [
+        0.17551329731941223,
+        0.17478981614112854,
+        0.7828286290168762
+      ],
+      "min": [
+        -0.18155395984649658,
+        -0.23278674483299255,
+        -0.001743845408782363
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2064,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 640,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 960,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1056,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 480,
+      "componentType": 5125,
+      "count": 18,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2208,
+      "componentType": 5126,
+      "count": 12,
+      "max": [
+        0.48045411705970764,
+        0.2220800220966339,
+        0.9647996425628662
+      ],
+      "min": [
+        -0.43151068687438965,
+        -0.34558528661727905,
+        0.0007666504243388772
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2352,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 832,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1152,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1248,
+      "componentType": 5126,
+      "count": 12,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 552,
+      "componentType": 5125,
+      "count": 18,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2496,
+      "componentType": 5126,
+      "count": 28,
+      "max": [
+        3.072294235229492,
+        2.7932112216949463,
+        5.8273773193359375
+      ],
+      "min": [
+        -2.4374024868011475,
+        -2.531606674194336,
+        -0.008620006963610649
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2832,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1024,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1344,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1568,
+      "componentType": 5126,
+      "count": 28,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 624,
+      "componentType": 5125,
+      "count": 42,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3168,
+      "componentType": 5126,
+      "count": 336,
+      "max": [
+        3.4325947761535645,
+        3.309788227081299,
+        7.9117937088012695
+      ],
+      "min": [
+        -2.530568838119507,
+        -3.005582571029663,
+        2.057638168334961
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7200,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1472,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1792,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4480,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 792,
+      "componentType": 5125,
+      "count": 504,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11232,
+      "componentType": 5126,
+      "count": 682,
+      "max": [
+        2.5215890407562256,
+        1.9974620342254639,
+        6.479282379150391
+      ],
+      "min": [
+        -1.415895700454712,
+        -1.5065832138061523,
+        -0.0005426151328720152
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 19416,
+      "componentType": 5126,
+      "count": 682,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 6848,
+      "componentType": 5126,
+      "count": 682,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7168,
+      "componentType": 5126,
+      "count": 682,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12624,
+      "componentType": 5126,
+      "count": 682,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2808,
+      "componentType": 5125,
+      "count": 1632,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27600,
+      "componentType": 5126,
+      "count": 8,
+      "max": [
+        0.21359200775623322,
+        0.09739243239164352,
+        0.48120594024658203
+      ],
+      "min": [
+        -0.11564531922340393,
+        -0.09705767035484314,
+        0.23097702860832214
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27696,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18080,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9336,
+      "componentType": 5125,
+      "count": 12,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27792,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.17469589412212372,
+        -0.0011047461302950978,
+        0.43437910079956055
+      ],
+      "min": [
+        -0.1877598911523819,
+        -0.0011047653388231993,
+        -0.003133914666250348
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27840,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 17760,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18144,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18176,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9384,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27888,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.30795910954475403,
+        1.5726241642255445e-08,
+        0.7180219292640686
+      ],
+      "min": [
+        -0.30795910954475403,
+        -1.5726241642255445e-08,
+        -0.0015270006842911243
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27936,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 17824,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18208,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18240,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9408,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27984,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        0.08735927939414978,
+        0.06793451309204102,
+        0.7656852602958679
+      ],
+      "min": [
+        -0.2637627422809601,
+        -0.07257790863513947,
+        0.3748314082622528
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28560,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18272,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9432,
+      "componentType": 5125,
+      "count": 72,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29136,
+      "componentType": 5126,
+      "count": 48,
+      "max": [
+        0.07010228931903839,
+        0.05427985265851021,
+        0.7366518974304199
+      ],
+      "min": [
+        -0.10744989663362503,
+        -0.07515833526849747,
+        0.4224918782711029
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29712,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18656,
+      "componentType": 5126,
+      "count": 48,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9720,
+      "componentType": 5125,
+      "count": 72,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 30288,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.2763454020023346,
+        0.0007554313051514328,
+        0.7150402069091797
+      ],
+      "min": [
+        -0.2968542277812958,
+        0.0007554059848189354,
+        -0.0005268692621029913
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 30336,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19040,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 10008,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 30384,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        1.204015851020813,
+        1.1907957792282104,
+        5.6384735107421875
+      ],
+      "min": [
+        -1.832460641860962,
+        -1.0106663703918457,
+        -0.13931512832641602
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 35280,
+      "componentType": 5126,
+      "count": 408,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 17888,
+      "componentType": 5126,
+      "count": 408,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19072,
+      "componentType": 5126,
+      "count": 408,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22336,
+      "componentType": 5126,
+      "count": 408,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 10032,
+      "componentType": 5125,
+      "count": 996,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 40176,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        2.9925904273986816,
+        2.894374370574951,
+        8.550005912780762
+      ],
+      "min": [
+        -3.199033498764038,
+        -2.713001251220703,
+        1.9405473470687866
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 41712,
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 25600,
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 14016,
+      "componentType": 5125,
+      "count": 192,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 43248,
+      "componentType": 5126,
+      "count": 320,
+      "max": [
+        1.563361644744873,
+        1.6948707103729248,
+        5.882494926452637
+      ],
+      "min": [
+        -1.2309818267822266,
+        -0.7089396119117737,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 47088,
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 24416,
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 26624,
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29184,
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 14784,
+      "componentType": 5125,
+      "count": 744,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 50928,
+      "componentType": 5126,
+      "count": 1728,
+      "max": [
+        3.062932014465332,
+        3.133466958999634,
+        8.272956848144531
+      ],
+      "min": [
+        -2.449786424636841,
+        -2.1367695331573486,
+        1.753924012184143
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 71664,
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 29536,
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 31744,
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 45568,
+      "componentType": 5126,
+      "count": 1728,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 17760,
+      "componentType": 5125,
+      "count": 2592,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 92400,
+      "componentType": 5126,
+      "count": 2496,
+      "max": [
+        2.831523895263672,
+        2.846486806869507,
+        7.594381809234619
+      ],
+      "min": [
+        -2.686548948287964,
+        -2.71504282951355,
+        1.1768816709518433
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 122352,
+      "componentType": 5126,
+      "count": 2496,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 57184,
+      "componentType": 5126,
+      "count": 2496,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 59392,
+      "componentType": 5126,
+      "count": 2496,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 79360,
+      "componentType": 5126,
+      "count": 2496,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 28128,
+      "componentType": 5125,
+      "count": 3744,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 152304,
+      "componentType": 5126,
+      "count": 512,
+      "max": [
+        1.4273182153701782,
+        1.8379883766174316,
+        6.223425388336182
+      ],
+      "min": [
+        -1.1317425966262817,
+        -1.8574427366256714,
+        -0.5168048143386841
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 158448,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 97120,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 99328,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 103424,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 43104,
+      "componentType": 5125,
+      "count": 1164,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 164592,
+      "componentType": 5126,
+      "count": 2256,
+      "max": [
+        2.8576366901397705,
+        3.1005470752716064,
+        7.3280744552612305
+      ],
+      "min": [
+        -2.0906338691711426,
+        -2.1616342067718506,
+        1.768431305885315
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 191664,
+      "componentType": 5126,
+      "count": 2256,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 105312,
+      "componentType": 5126,
+      "count": 2256,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 107520,
+      "componentType": 5126,
+      "count": 2256,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 125568,
+      "componentType": 5126,
+      "count": 2256,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 47760,
+      "componentType": 5125,
+      "count": 3384,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 218736,
+      "componentType": 5126,
+      "count": 512,
+      "max": [
+        1.70494544506073,
+        1.4995442628860474,
+        6.524301528930664
+      ],
+      "min": [
+        -1.3722285032272339,
+        -0.9197829961776733,
+        -0.1444876790046692
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 224880,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 141408,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 143616,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 147712,
+      "componentType": 5126,
+      "count": 512,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 61296,
+      "componentType": 5125,
+      "count": 1164,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "fab-model-conversion",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 65952,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 151808,
+      "byteOffset": 65952,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 231024,
+      "byteOffset": 217760,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 149600,
+      "byteOffset": 448784,
+      "byteStride": 16,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 598384,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/plant-ground-green-01_baseColor.png"
+    },
+    {
+      "uri": "textures/plant-ground-green-01_normal.png"
+    },
+    {
+      "uri": "textures/plant-ground-brown-02_baseColor.png"
+    },
+    {
+      "uri": "textures/daisy-flower-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/daisy-stem-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/daisy-stem-diffuse_normal.png"
+    },
+    {
+      "uri": "textures/grass-01_baseColor.png"
+    },
+    {
+      "uri": "textures/grass-01_normal.png"
+    },
+    {
+      "uri": "textures/grass-stylized-02_baseColor.png"
+    },
+    {
+      "uri": "textures/grass-stylized-02_normal.png"
+    },
+    {
+      "uri": "textures/tree-branch-stylized-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-branch-stylized-diffuse_normal.png"
+    },
+    {
+      "uri": "textures/tree-wood_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-wood_normal.png"
+    },
+    {
+      "uri": "textures/daisy-stem-diffuse-02_baseColor.png"
+    },
+    {
+      "uri": "textures/daisy-stem-diffuse-02_normal.png"
+    },
+    {
+      "uri": "textures/daffodil-stem-01-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/daffodil-stem-01-diffuse_normal.png"
+    },
+    {
+      "uri": "textures/daffodil-flower-yellow_baseColor.png"
+    },
+    {
+      "uri": "textures/daffodil-flower-white_baseColor.png"
+    },
+    {
+      "uri": "textures/daffodil-stem-02-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-bark-02_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-bark-02_normal.png"
+    },
+    {
+      "uri": "textures/tree-branches-dry-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-04_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-04_normal.png"
+    },
+    {
+      "uri": "textures/tree-branches-mix-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-branches-mix-diffuse_normal.png"
+    },
+    {
+      "uri": "textures/tree-branches-autumn-mix-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-branches-autumn-mix-diffuse_normal.png"
+    },
+    {
+      "uri": "textures/tree-bark-03_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-bark-03_normal.png"
+    },
+    {
+      "uri": "textures/tree-branches-autumn-yellow-mix-diffuse_baseColor.png"
+    },
+    {
+      "uri": "textures/tree-branches-autumn-yellow-mix-diffuse_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "plant-ground-green-01",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "plant-ground-brown-02",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daisy-flower-diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daisy-stem-diffuse",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "grass-01",
+      "normalTexture": {
+        "index": 7
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "grass-stylized-02",
+      "normalTexture": {
+        "index": 9
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 8
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "tree-branch-stylized-diffuse",
+      "normalTexture": {
+        "index": 11
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 10
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tree-wood",
+      "normalTexture": {
+        "index": 13
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 12
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daisy-stem-diffuse-02",
+      "normalTexture": {
+        "index": 15
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 14
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daffodil-stem-01-diffuse",
+      "normalTexture": {
+        "index": 17
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 16
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daffodil-flower-yellow",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 18
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daffodil-flower-white",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 19
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "daffodil-stem-02-diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 20
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tree-bark-02",
+      "normalTexture": {
+        "index": 22
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 21
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.25,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "tree-branches-dry-diffuse",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 23
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tree-04",
+      "normalTexture": {
+        "index": 25
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 24
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.75,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "tree-branches-mix-diffuse",
+      "normalTexture": {
+        "index": 27
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 26
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.9,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "tree-branches-autumn-mix-diffuse",
+      "normalTexture": {
+        "index": 29
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 28
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tree-bark-03",
+      "normalTexture": {
+        "index": 31
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 30
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "alphaCutoff": 0.9,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "tree-branches-autumn-yellow-mix-diffuse",
+      "normalTexture": {
+        "index": 33
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 32
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "plant-ground-green-01_plant-ground-green-01_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "plant-ground-brown-02_plant-ground-brown-02_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9,
+            "TEXCOORD_1": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-02_daisy-flower-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-02_daisy-stem-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TANGENT": 18,
+            "TEXCOORD_0": 19,
+            "TEXCOORD_1": 20
+          },
+          "indices": 21,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-01_daisy-flower-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 23,
+            "POSITION": 22,
+            "TEXCOORD_0": 24
+          },
+          "indices": 25,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-01_daisy-stem-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 27,
+            "POSITION": 26,
+            "TANGENT": 28,
+            "TEXCOORD_0": 29,
+            "TEXCOORD_1": 30
+          },
+          "indices": 31,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "grass-bushes-01_grass-01_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 33,
+            "POSITION": 32,
+            "TANGENT": 34,
+            "TEXCOORD_0": 35,
+            "TEXCOORD_1": 36
+          },
+          "indices": 37,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "grass-bushes-02_grass-stylized-02_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 39,
+            "POSITION": 38,
+            "TANGENT": 40,
+            "TEXCOORD_0": 41,
+            "TEXCOORD_1": 42
+          },
+          "indices": 43,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-01_tree-branch-stylized-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 45,
+            "POSITION": 44,
+            "TANGENT": 46,
+            "TEXCOORD_0": 47,
+            "TEXCOORD_1": 48
+          },
+          "indices": 49,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-01_tree-wood_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 51,
+            "POSITION": 50,
+            "TANGENT": 52,
+            "TEXCOORD_0": 53,
+            "TEXCOORD_1": 54
+          },
+          "indices": 55,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-03_daisy-flower-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 57,
+            "POSITION": 56,
+            "TEXCOORD_0": 58
+          },
+          "indices": 59,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daisy-flower-diffuse-03_daisy-stem-diffuse-02_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 61,
+            "POSITION": 60,
+            "TANGENT": 62,
+            "TEXCOORD_0": 63,
+            "TEXCOORD_1": 64
+          },
+          "indices": 65,
+          "material": 8,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daffodil-flower-01_daffodil-stem-01-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 67,
+            "POSITION": 66,
+            "TANGENT": 68,
+            "TEXCOORD_0": 69,
+            "TEXCOORD_1": 70
+          },
+          "indices": 71,
+          "material": 9,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daffodil-flower-01_daffodil-flower-yellow_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 73,
+            "POSITION": 72,
+            "TEXCOORD_0": 74
+          },
+          "indices": 75,
+          "material": 10,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daffodil-flower-02_daffodil-flower-white_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 77,
+            "POSITION": 76,
+            "TEXCOORD_0": 78
+          },
+          "indices": 79,
+          "material": 11,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "daffodil-flower-02_daffodil-stem-02-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 81,
+            "POSITION": 80,
+            "TEXCOORD_0": 82
+          },
+          "indices": 83,
+          "material": 12,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-02-dry_tree-bark-02_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 85,
+            "POSITION": 84,
+            "TANGENT": 86,
+            "TEXCOORD_0": 87,
+            "TEXCOORD_1": 88
+          },
+          "indices": 89,
+          "material": 13,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-02-dry_tree-branches-dry-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 91,
+            "POSITION": 90,
+            "TEXCOORD_0": 92
+          },
+          "indices": 93,
+          "material": 14,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-04-green_tree-04_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 95,
+            "POSITION": 94,
+            "TANGENT": 96,
+            "TEXCOORD_0": 97,
+            "TEXCOORD_1": 98
+          },
+          "indices": 99,
+          "material": 15,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-04-green_tree-branches-mix-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 101,
+            "POSITION": 100,
+            "TANGENT": 102,
+            "TEXCOORD_0": 103,
+            "TEXCOORD_1": 104
+          },
+          "indices": 105,
+          "material": 16,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-05-autumn-brown_tree-branches-autumn-mix-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 107,
+            "POSITION": 106,
+            "TANGENT": 108,
+            "TEXCOORD_0": 109,
+            "TEXCOORD_1": 110
+          },
+          "indices": 111,
+          "material": 17,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-05-autumn-brown_tree-bark-03_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 113,
+            "POSITION": 112,
+            "TANGENT": 114,
+            "TEXCOORD_0": 115,
+            "TEXCOORD_1": 116
+          },
+          "indices": 117,
+          "material": 18,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-03-autumn-yellow_tree-branches-autumn-yellow-mix-diffuse_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 119,
+            "POSITION": 118,
+            "TANGENT": 120,
+            "TEXCOORD_0": 121,
+            "TEXCOORD_1": 122
+          },
+          "indices": 123,
+          "material": 19,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tree-stylized-03-autumn-yellow_tree-bark-03_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 125,
+            "POSITION": 124,
+            "TANGENT": 126,
+            "TEXCOORD_0": 127,
+            "TEXCOORD_1": 128
+          },
+          "indices": 129,
+          "material": 18,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "d505e033915440c1adbb4e8bacce61e9.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        10,
+        13,
+        15,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "plant-ground-green-01"
+    },
+    {
+      "mesh": 0,
+      "name": "plant-ground-green-01_plant-ground-green-01_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        100.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "plant-ground-brown-02"
+    },
+    {
+      "mesh": 1,
+      "name": "plant-ground-brown-02_plant-ground-brown-02_0"
+    },
+    {
+      "children": [
+        8,
+        9
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -78.91519927978516,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "daisy-flower-diffuse-02"
+    },
+    {
+      "mesh": 2,
+      "name": "daisy-flower-diffuse-02_daisy-flower-diffuse_0"
+    },
+    {
+      "mesh": 3,
+      "name": "daisy-flower-diffuse-02_daisy-stem-diffuse_0"
+    },
+    {
+      "children": [
+        11,
+        12
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -146.7943572998047,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "daisy-flower-diffuse-01"
+    },
+    {
+      "mesh": 4,
+      "name": "daisy-flower-diffuse-01_daisy-flower-diffuse_0"
+    },
+    {
+      "mesh": 5,
+      "name": "daisy-flower-diffuse-01_daisy-stem-diffuse_0"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        200.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "grass-bushes-01"
+    },
+    {
+      "mesh": 6,
+      "name": "grass-bushes-01_grass-01_0"
+    },
+    {
+      "children": [
+        16
+      ],
+      "matrix": [
+        3.0669113310977507,
+        0.0,
+        6.196365530465925,
+        0.0,
+        10.560413458998132,
+        -3.324383433792713e-06,
+        -5.226911088320385,
+        0.0,
+        3.087988689749269e-06,
+        12.212580680846683,
+        -1.528410076378834e-06,
+        0.0,
+        299.9486999511719,
+        0.5837727189064026,
+        6.555306911468506,
+        1.0
+      ],
+      "name": "grass-bushes-02"
+    },
+    {
+      "mesh": 7,
+      "name": "grass-bushes-02_grass-stylized-02_0"
+    },
+    {
+      "children": [
+        18,
+        19
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        939.095947265625,
+        -5.573553085327148,
+        -477.1788024902344,
+        1.0
+      ],
+      "name": "tree-stylized-01"
+    },
+    {
+      "mesh": 8,
+      "name": "tree-stylized-01_tree-branch-stylized-diffuse_0"
+    },
+    {
+      "mesh": 9,
+      "name": "tree-stylized-01_tree-wood_0"
+    },
+    {
+      "children": [
+        21,
+        22
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -193.4212646484375,
+        0.6077766418457031,
+        -0.15182411670684814,
+        1.0
+      ],
+      "name": "daisy-flower-diffuse-03"
+    },
+    {
+      "mesh": 10,
+      "name": "daisy-flower-diffuse-03_daisy-flower-diffuse_0"
+    },
+    {
+      "mesh": 11,
+      "name": "daisy-flower-diffuse-03_daisy-stem-diffuse-02_0"
+    },
+    {
+      "children": [
+        24,
+        25
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -247.7039337158203,
+        -0.021163001656532288,
+        1.4920303328835871e-05,
+        1.0
+      ],
+      "name": "daffodil-flower-01"
+    },
+    {
+      "mesh": 12,
+      "name": "daffodil-flower-01_daffodil-stem-01-diffuse_0"
+    },
+    {
+      "mesh": 13,
+      "name": "daffodil-flower-01_daffodil-flower-yellow_0"
+    },
+    {
+      "children": [
+        27,
+        28
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -302.6806640625,
+        -0.06073862314224243,
+        0.1055811420083046,
+        1.0
+      ],
+      "name": "daffodil-flower-02"
+    },
+    {
+      "mesh": 14,
+      "name": "daffodil-flower-02_daffodil-flower-white_0"
+    },
+    {
+      "mesh": 15,
+      "name": "daffodil-flower-02_daffodil-stem-02-diffuse_0"
+    },
+    {
+      "children": [
+        30,
+        31
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        542.70947265625,
+        -5.573553085327148,
+        -630.7423095703125,
+        1.0
+      ],
+      "name": "tree-stylized-02-dry"
+    },
+    {
+      "mesh": 16,
+      "name": "tree-stylized-02-dry_tree-bark-02_0"
+    },
+    {
+      "mesh": 17,
+      "name": "tree-stylized-02-dry_tree-branches-dry-diffuse_0"
+    },
+    {
+      "children": [
+        33,
+        34
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -1050.4117431640625,
+        -9.884693145751953,
+        -413.27252197265625,
+        1.0
+      ],
+      "name": "tree-stylized-04-green"
+    },
+    {
+      "mesh": 18,
+      "name": "tree-stylized-04-green_tree-04_0"
+    },
+    {
+      "mesh": 19,
+      "name": "tree-stylized-04-green_tree-branches-mix-diffuse_0"
+    },
+    {
+      "children": [
+        36,
+        37
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -500.5337219238281,
+        39.04942321777344,
+        -483.79779052734375,
+        1.0
+      ],
+      "name": "tree-stylized-05-autumn-brown"
+    },
+    {
+      "mesh": 20,
+      "name": "tree-stylized-05-autumn-brown_tree-branches-autumn-mix-diffuse_0"
+    },
+    {
+      "mesh": 21,
+      "name": "tree-stylized-05-autumn-brown_tree-bark-03_0"
+    },
+    {
+      "children": [
+        39,
+        40
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -27.71419334411621,
+        -9.64649772644043,
+        -504.85247802734375,
+        1.0
+      ],
+      "name": "tree-stylized-03-autumn-yellow"
+    },
+    {
+      "mesh": 22,
+      "name": "tree-stylized-03-autumn-yellow_tree-branches-autumn-yellow-mix-diffuse_0"
+    },
+    {
+      "mesh": 23,
+      "name": "tree-stylized-03-autumn-yellow_tree-bark-03_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 33071,
+      "wrapT": 33071
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 1,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    },
+    {
+      "sampler": 0,
+      "source": 7
+    },
+    {
+      "sampler": 0,
+      "source": 8
+    },
+    {
+      "sampler": 1,
+      "source": 9
+    },
+    {
+      "sampler": 0,
+      "source": 10
+    },
+    {
+      "sampler": 0,
+      "source": 11
+    },
+    {
+      "sampler": 1,
+      "source": 12
+    },
+    {
+      "sampler": 1,
+      "source": 13
+    },
+    {
+      "sampler": 0,
+      "source": 14
+    },
+    {
+      "sampler": 1,
+      "source": 15
+    },
+    {
+      "sampler": 0,
+      "source": 16
+    },
+    {
+      "sampler": 1,
+      "source": 17
+    },
+    {
+      "sampler": 0,
+      "source": 18
+    },
+    {
+      "sampler": 0,
+      "source": 19
+    },
+    {
+      "sampler": 0,
+      "source": 20
+    },
+    {
+      "sampler": 1,
+      "source": 21
+    },
+    {
+      "sampler": 1,
+      "source": 22
+    },
+    {
+      "sampler": 0,
+      "source": 23
+    },
+    {
+      "sampler": 1,
+      "source": 24
+    },
+    {
+      "sampler": 1,
+      "source": 25
+    },
+    {
+      "sampler": 0,
+      "source": 26
+    },
+    {
+      "sampler": 1,
+      "source": 27
+    },
+    {
+      "sampler": 0,
+      "source": 28
+    },
+    {
+      "sampler": 0,
+      "source": 29
+    },
+    {
+      "sampler": 1,
+      "source": 30
+    },
+    {
+      "sampler": 1,
+      "source": 31
+    },
+    {
+      "sampler": 0,
+      "source": 32
+    },
+    {
+      "sampler": 0,
+      "source": 33
+    }
+  ]
+}
