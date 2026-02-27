@@ -1,6 +1,7 @@
 import RAPIER from '@dimforge/rapier3d-compat';
 
 export class PhysicsManager {
+    public readonly RAPIER = RAPIER;
     public world!: RAPIER.World;
 
     constructor() {
