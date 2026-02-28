@@ -10,4 +10,13 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    proxy: {
+      '/mapzen-tiles': {
+        target: 'https://elevation-tiles-prod.s3.amazonaws.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/mapzen-tiles/, ''),
+      },
+    },
+  },
 })

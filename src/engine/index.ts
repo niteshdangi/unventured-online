@@ -1,1 +1,1 @@
-export { Engine as GameEngine } from './core/Engine';
+export { Engine as GameEngine } from './Engine';

@@ -9,14 +9,12 @@ function App() {
   useEffect(() => {
     if (!canvasRef.current) return;
 
-    // Initialize the engine once
     engineRef.current = new GameEngine(canvasRef.current);
     engineRef.current.start();
 
     return () => {
-      // Cleanup on unmount
       if (engineRef.current) {
-        engineRef.current.cleanup();
+        engineRef.current.destroy();
         engineRef.current = null;
       }
     };
@@ -25,11 +23,6 @@ function App() {
   return (
     <div className="app-container">
       <canvas ref={canvasRef} id="game-canvas" />
-      <div className="ui-layer">
-        <div className="instructions">
-          Use WASD to move the character.
-        </div>
-      </div>
     </div>
   );
 }
