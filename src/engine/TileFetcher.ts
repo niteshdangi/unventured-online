@@ -4,6 +4,8 @@ export type TileLayer = "albedo" | "elevation";
 
 export class TileFetcher {
     private activeRequests = new Map<string, Promise<ImageBitmap | null>>();
+    private imageCache = new Map<string, ImageBitmap>();
+    private maxCacheSize = 1000;
 
     // Create a 1x1 fallback bitmap
     private fallbackBitmapPromise: Promise<ImageBitmap>;
@@ -22,6 +24,14 @@ export class TileFetcher {
         const url = this.getTileUrl(tile, layer);
         const cacheKey = `${layer}_${tile.toString()}`;
 
+        if (this.imageCache.has(cacheKey)) {
+            // Move to end for LRU freshness
+            const bmp = this.imageCache.get(cacheKey)!;
+            this.imageCache.delete(cacheKey);
+            this.imageCache.set(cacheKey, bmp);
+            return bmp;
+        }
+
         if (this.activeRequests.has(cacheKey)) {
             return this.activeRequests.get(cacheKey)!;
         }
@@ -35,11 +45,23 @@ export class TileFetcher {
 
         const result = await promise;
 
-        // Optionally, we could remove it from activeRequests after completion
-        // If we want to hold a memory cache, we can leave it, but ImageBitmaps consume memory.
-        // For now, let's treat activeRequests as a deduplication mechanism during flight,
-        // and we delete it so the memory is freed if the object is dropped by the atlas.
         this.activeRequests.delete(cacheKey);
+
+        if (result && result !== (await this.fallbackBitmapPromise)) {
+            this.imageCache.set(cacheKey, result);
+            if (this.imageCache.size > this.maxCacheSize) {
+                // Evict oldest
+                const oldestKey = this.imageCache.keys().next().value;
+                if (oldestKey) {
+                    const bmp = this.imageCache.get(oldestKey);
+                    // Standard way to forcefully release GPU memory for ImageBitmaps if supported
+                    if (bmp && "close" in bmp) {
+                        (bmp as any).close();
+                    }
+                    this.imageCache.delete(oldestKey);
+                }
+            }
+        }
 
         return result;
     }
