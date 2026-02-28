@@ -113,6 +113,10 @@ export class GpuTileMetadataBuffer {
     private allocate(tileCount: number) {
         this.capacity = Math.max(tileCount, 64);
 
+        if (this.buffer) {
+            this.buffer.destroy();
+        }
+
         this.buffer = this.device.createBuffer({
             size: this.capacity * BYTES_PER_TILE,
             usage:

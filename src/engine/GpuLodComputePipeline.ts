@@ -70,17 +70,31 @@ export class GpuLodComputePipeline {
             new Uint32Array([indexCount, tileCount, 0, 0])
         );
 
-        this.bindGroup = this.device.createBindGroup({
-            layout: this.pipeline.getBindGroupLayout(0),
-            entries: [
-                { binding: 0, resource: { buffer: tileBuffer } },
-                { binding: 1, resource: { buffer: visibleTilesBuffer } },
-                { binding: 2, resource: { buffer: drawBuffer } },
-                { binding: 3, resource: { buffer: frustumBuffer } },
-                { binding: 4, resource: { buffer: this.uniformBuffer } }
-            ]
-        });
+        if (!this.bindGroup ||
+            this.cachedTileBuffer !== tileBuffer ||
+            this.cachedDrawBuffer !== drawBuffer ||
+            this.cachedVisibleBuffer !== visibleTilesBuffer) {
+
+            this.cachedTileBuffer = tileBuffer;
+            this.cachedDrawBuffer = drawBuffer;
+            this.cachedVisibleBuffer = visibleTilesBuffer;
+
+            this.bindGroup = this.device.createBindGroup({
+                layout: this.pipeline.getBindGroupLayout(0),
+                entries: [
+                    { binding: 0, resource: { buffer: tileBuffer } },
+                    { binding: 1, resource: { buffer: visibleTilesBuffer } },
+                    { binding: 2, resource: { buffer: drawBuffer } },
+                    { binding: 3, resource: { buffer: frustumBuffer } },
+                    { binding: 4, resource: { buffer: this.uniformBuffer } }
+                ]
+            });
+        }
     }
+
+    private cachedTileBuffer?: GPUBuffer;
+    private cachedDrawBuffer?: GPUBuffer;
+    private cachedVisibleBuffer?: GPUBuffer;
 
     dispatch(encoder: GPUCommandEncoder, tileCount: number) {
         if (tileCount === 0) return;

@@ -4,8 +4,10 @@ export type TileLayer = "albedo" | "elevation";
 
 export class TileFetcher {
     private activeRequests = new Map<string, Promise<ImageBitmap | null>>();
+    private abortControllers = new Map<string, AbortController>();
     private imageCache = new Map<string, ImageBitmap>();
-    private maxCacheSize = 1000;
+    private maxCacheSize = 2000;
+    private failedRequests = new Set<string>();
 
     // Create a 1x1 fallback bitmap
     private fallbackBitmapPromise: Promise<ImageBitmap>;
@@ -24,6 +26,10 @@ export class TileFetcher {
         const url = this.getTileUrl(tile, layer);
         const cacheKey = `${layer}_${tile.toString()}`;
 
+        if (this.failedRequests.has(cacheKey)) {
+            return this.fallbackBitmapPromise;
+        }
+
         if (this.imageCache.has(cacheKey)) {
             // Move to end for LRU freshness
             const bmp = this.imageCache.get(cacheKey)!;
@@ -36,8 +42,15 @@ export class TileFetcher {
             return this.activeRequests.get(cacheKey)!;
         }
 
-        const promise = this.downloadImage(url).catch((e) => {
-            console.warn(`Failed to fetch tile ${cacheKey}:`, e);
+        const controller = new AbortController();
+        this.abortControllers.set(cacheKey, controller);
+
+        const promise = this.downloadImage(url, controller).catch((e) => {
+            if (e.name === "AbortError") {
+                return null;
+            }
+            console.warn(`Failed to fetch tile ${cacheKey}:`, e.message);
+            this.failedRequests.add(cacheKey);
             return this.fallbackBitmapPromise;
         });
 
@@ -46,6 +59,7 @@ export class TileFetcher {
         const result = await promise;
 
         this.activeRequests.delete(cacheKey);
+        this.abortControllers.delete(cacheKey);
 
         if (result && result !== (await this.fallbackBitmapPromise)) {
             this.imageCache.set(cacheKey, result);
@@ -66,8 +80,16 @@ export class TileFetcher {
         return result;
     }
 
-    private async downloadImage(url: string): Promise<ImageBitmap> {
-        const controller = new AbortController();
+    cancelTile(tile: TileKey, layer: TileLayer) {
+        const cacheKey = `${layer}_${tile.toString()}`;
+        if (this.abortControllers.has(cacheKey)) {
+            this.abortControllers.get(cacheKey)!.abort();
+            this.abortControllers.delete(cacheKey);
+            this.activeRequests.delete(cacheKey);
+        }
+    }
+
+    private async downloadImage(url: string, controller: AbortController): Promise<ImageBitmap> {
         const timeoutId = setTimeout(() => controller.abort(), 5000);
 
         try {
@@ -86,8 +108,8 @@ export class TileFetcher {
 
     private getTileUrl(tile: TileKey, layer: TileLayer): string {
         if (layer === "elevation") {
-            // Standard AWS Public Dataset
-            return `https://elevation-tiles-prod.s3.amazonaws.com/terrarium/${tile.level}/${tile.x}/${tile.y}.png`;
+            // Proxied through Vite to bypass browser CORS headers
+            return `/mapzen-tiles/terrarium/${tile.level}/${tile.x}/${tile.y}.png`;
         } else {
             // ArcGIS World Imagery (highly reliable, no CORS issues, extremely fast)
             return `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${tile.level}/${tile.y}/${tile.x}`;

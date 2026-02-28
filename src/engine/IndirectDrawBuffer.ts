@@ -29,13 +29,11 @@
 // --------------------------------------------------------
 
 const BYTES_PER_DRAW = 20;
-const BYTES_PER_TILE = 32;
 
 export class IndirectDrawBuffer {
     private device: GPUDevice;
 
     private drawBuffer!: GPUBuffer;
-    private visibleTilesBuffer!: GPUBuffer;
 
     private capacity: number = 0;
 
@@ -47,9 +45,7 @@ export class IndirectDrawBuffer {
         return this.drawBuffer;
     }
 
-    getVisibleTilesBuffer(): GPUBuffer {
-        return this.visibleTilesBuffer;
-    }
+
 
     getCapacity(): number {
         return this.capacity;
@@ -64,6 +60,8 @@ export class IndirectDrawBuffer {
     private allocate(tileCapacity: number) {
         this.capacity = tileCapacity;
 
+        if (this.drawBuffer) this.drawBuffer.destroy();
+
         // SINGLE 20-byte indirect struct buffer
         this.drawBuffer = this.device.createBuffer({
             size: BYTES_PER_DRAW,
@@ -73,20 +71,11 @@ export class IndirectDrawBuffer {
                 GPUBufferUsage.COPY_DST,
             mappedAtCreation: false
         });
-
-        // Contiguous buffer of visible tiles for the vertex shader
-        this.visibleTilesBuffer = this.device.createBuffer({
-            size: this.capacity * BYTES_PER_TILE,
-            usage:
-                GPUBufferUsage.STORAGE |
-                GPUBufferUsage.COPY_DST,
-            mappedAtCreation: false
-        });
     }
 
-    resetCounter(indexCount: number) {
+    setDrawCommand(indexCount: number, instanceCount: number) {
         // [indexCount, instanceCount, firstIndex, baseVertex, firstInstance]
-        const data = new Uint32Array([indexCount, 0, 0, 0, 0]);
+        const data = new Uint32Array([indexCount, instanceCount, 0, 0, 0]);
         this.device.queue.writeBuffer(this.drawBuffer, 0, data);
     }
 }

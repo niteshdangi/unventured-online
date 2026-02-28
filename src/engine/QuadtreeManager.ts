@@ -106,7 +106,25 @@ export class QuadtreeManager {
         const dz = bounds.center.z - camera.positionECEF.z;
 
         const distanceToCenter = Math.sqrt(dx * dx + dy * dy + dz * dz);
-        const distance = Math.max(0.1, distanceToCenter - bounds.radius);
+
+        // Horizon Culling: If the bounding sphere is entirely behind the horizon of the planet
+        // Simple dot product check: vector to tile center vs vector to planet center
+        const dotProduct = (bounds.center.x * dx + bounds.center.y * dy + bounds.center.z * dz) / distanceToCenter;
+
+        // If the tile is significantly wrapped around the sphere and behind the tangent, cull it
+        if (distanceToCenter > this.config.planetRadius && dotProduct > bounds.radius) {
+            return;
+        }
+
+        const cameraRadius = Math.sqrt(
+            camera.positionECEF.x * camera.positionECEF.x +
+            camera.positionECEF.y * camera.positionECEF.y +
+            camera.positionECEF.z * camera.positionECEF.z
+        );
+        const cameraAltitude = Math.max(10.0, cameraRadius - this.config.planetRadius);
+
+        // Clamping to altitude prevents distance falling to 0.1 for high-altitude tiles that contain the camera
+        const distance = Math.max(cameraAltitude, distanceToCenter - bounds.radius);
 
         const geometricError = this.computeGeometricError(tile.level);
         const sse = (geometricError / distance) * camera.screenHeight;

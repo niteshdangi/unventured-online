@@ -2,6 +2,7 @@ import { TileKey } from "./TileKey";
 
 export class TextureAtlas {
     public texture!: GPUTexture;
+    public view!: GPUTextureView;
     public sampler!: GPUSampler;
 
     private layerCapacity: number;
@@ -39,6 +40,8 @@ export class TextureAtlas {
             format: this.format,
             usage: GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT,
         });
+
+        this.view = this.texture.createView({ dimension: "2d-array" });
 
         this.sampler = this.device.createSampler({
             magFilter: "linear",

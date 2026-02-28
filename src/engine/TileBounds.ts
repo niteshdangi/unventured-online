@@ -63,10 +63,10 @@ export function computeTileBoundingSphere(tile: TileKey): BoundingSphere {
         if (distSq > maxDistSq) maxDistSq = distSq;
     }
 
-    // Add 20% extra padding for high terrain displacement like Mt Everest
+    // Add 50% extra padding for high terrain displacement like Mt Everest
     return {
         center,
-        radius: Math.sqrt(maxDistSq) * 1.2
+        radius: Math.sqrt(maxDistSq) * 1.5
     };
 }
 

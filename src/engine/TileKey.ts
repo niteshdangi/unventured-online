@@ -74,11 +74,7 @@ export class TileKey implements TileKeyData {
     // ------------------------------------------------------
 
     static rootFaces(): TileKey[] {
-        const roots: TileKey[] = [];
-        for (let face = 0; face < 6; face++) {
-            roots.push(new TileKey(face, 0, 0, 0));
-        }
-        return roots;
+        return [new TileKey(0, 0, 0, 0)];
     }
 
     // ------------------------------------------------------

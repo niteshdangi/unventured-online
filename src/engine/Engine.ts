@@ -29,6 +29,7 @@ export class Engine {
 
     private animationId = 0;
     private lastFrameTime = 0;
+    private destroyed = false;
 
     constructor(canvas: HTMLCanvasElement) {
         this.canvas = canvas;
@@ -36,6 +37,8 @@ export class Engine {
 
     async start() {
         await this.initWebGPU();
+        if (this.destroyed) return;
+
         this.initSystems();
         this.resize();
 
@@ -44,6 +47,7 @@ export class Engine {
     }
 
     destroy() {
+        this.destroyed = true;
         cancelAnimationFrame(this.animationId);
         window.removeEventListener("resize", this.resize);
     }
@@ -116,8 +120,8 @@ export class Engine {
             {
                 planetRadius: 6378137.0,
                 maxLevel: 14,
-                minLevel: 2,
-                sseThreshold: 2.0,
+                minLevel: 1,
+                sseThreshold: 8.0,
                 gridResolution: 33,
                 maxTextureLayers: this.device.limits.maxTextureArrayLayers || 256
             }

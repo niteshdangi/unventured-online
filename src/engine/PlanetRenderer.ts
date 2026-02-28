@@ -19,7 +19,6 @@ import { type CameraState, QuadtreeManager } from "./QuadtreeManager";
 import { type CameraLocalState } from "./FloatingOriginController";
 import { GpuTileMetadataBuffer } from "./GpuTileMetadataBuffer";
 import { IndirectDrawBuffer } from "./IndirectDrawBuffer";
-import { GpuLodComputePipeline } from "./GpuLodComputePipeline";
 import { TilePatchGeometry } from "./TilePatchGeometry";
 import { FrustumPlanes } from "./FrustumPlanes";
 import { type Geodetic, geodeticToECEF, enuToECEF } from "./PlanetMath";
@@ -43,7 +42,6 @@ export class PlanetRenderer {
     private quadtree: QuadtreeManager;
     private tileBuffer: GpuTileMetadataBuffer;
     private indirectBuffer: IndirectDrawBuffer;
-    private gpuVisibility: GpuLodComputePipeline;
     private geometry: TilePatchGeometry;
     private frustum: FrustumPlanes;
 
@@ -79,7 +77,6 @@ export class PlanetRenderer {
 
         this.tileBuffer = new GpuTileMetadataBuffer(device);
         this.indirectBuffer = new IndirectDrawBuffer(device);
-        this.gpuVisibility = new GpuLodComputePipeline(device);
         this.geometry = new TilePatchGeometry(device, {
             resolution: config.gridResolution,
             enableSkirts: true
@@ -116,6 +113,9 @@ export class PlanetRenderer {
         });
     }
 
+    private renderBindGroup?: GPUBindGroup;
+    private cachedTileBuffer?: GPUBuffer;
+    private cachedMvpBuffer?: GPUBuffer;
     private isRendering = false;
 
     async render(cameraState: CameraLocalState, width: number, height: number, anchorGeodetic: Geodetic) {
@@ -127,8 +127,8 @@ export class PlanetRenderer {
 
             const projection = mat4.create();
             // Use perspectiveZO (Zero-to-One) for WebGPU clip space [0, 1] instead of OpenGL [-1, 1]
-            // Increase Near to 10.0 and Far to 4e7 to prevent 24-bit depth precision collapse
-            mat4.perspectiveZO(projection, Math.PI / 4, width / height, 10.0, 4e7);
+            // Increase Near to 0.1 and Far to 1e8 to prevent clipping the planet in deep orbit
+            mat4.perspectiveZO(projection, Math.PI / 4, width / height, 0.1, 1e8);
 
             const view = mat4.create();
 
@@ -198,6 +198,8 @@ export class PlanetRenderer {
             for (const tile of removed) {
                 this.albedoAtlas.freeLayer(tile);
                 this.elevationAtlas.freeLayer(tile);
+                this.tileFetcher.cancelTile(tile, "albedo");
+                this.tileFetcher.cancelTile(tile, "elevation");
             }
 
             for (const tile of added) {
@@ -227,20 +229,9 @@ export class PlanetRenderer {
 
             this.tileBuffer.update(activeTiles, this.albedoAtlas, this.elevationAtlas);
             this.indirectBuffer.ensureCapacity(activeTiles.length);
-            this.indirectBuffer.resetCounter(this.geometry.getIndexCount());
+            this.indirectBuffer.setDrawCommand(this.geometry.getIndexCount(), activeTiles.length);
 
             const encoder = this.device.createCommandEncoder();
-
-            this.gpuVisibility.initialize(
-                this.tileBuffer.getBuffer(),
-                this.indirectBuffer.getVisibleTilesBuffer(),
-                this.indirectBuffer.getDrawBuffer(),
-                this.frustumBuffer,
-                this.geometry.getIndexCount(),
-                activeTiles.length
-            );
-
-            this.gpuVisibility.dispatch(encoder, activeTiles.length);
 
             const pass = encoder.beginRenderPass({
                 colorAttachments: [{
@@ -257,19 +248,28 @@ export class PlanetRenderer {
                 }
             });
 
-            const renderBindGroup = this.device.createBindGroup({
-                layout: this.renderPipeline.getBindGroupLayout(0),
-                entries: [
-                    { binding: 0, resource: { buffer: this.indirectBuffer.getVisibleTilesBuffer() } },
-                    { binding: 1, resource: { buffer: this.mvpBuffer } },
-                    { binding: 2, resource: this.albedoAtlas.sampler },
-                    { binding: 3, resource: this.albedoAtlas.texture.createView({ dimension: "2d-array" }) },
-                    { binding: 4, resource: this.elevationAtlas.texture.createView({ dimension: "2d-array" }) }
-                ]
-            });
+            const currentTileBuffer = this.tileBuffer.getBuffer();
+            if (!this.renderBindGroup ||
+                this.cachedTileBuffer !== currentTileBuffer ||
+                this.cachedMvpBuffer !== this.mvpBuffer) {
+
+                this.cachedTileBuffer = currentTileBuffer;
+                this.cachedMvpBuffer = this.mvpBuffer;
+
+                this.renderBindGroup = this.device.createBindGroup({
+                    layout: this.renderPipeline.getBindGroupLayout(0),
+                    entries: [
+                        { binding: 0, resource: { buffer: currentTileBuffer } },
+                        { binding: 1, resource: { buffer: this.mvpBuffer } },
+                        { binding: 2, resource: this.albedoAtlas.sampler },
+                        { binding: 3, resource: this.albedoAtlas.view },
+                        { binding: 4, resource: this.elevationAtlas.view }
+                    ]
+                });
+            }
 
             pass.setPipeline(this.renderPipeline);
-            pass.setBindGroup(0, renderBindGroup);
+            pass.setBindGroup(0, this.renderBindGroup);
             pass.setVertexBuffer(0, this.geometry.getVertexBuffer());
             pass.setIndexBuffer(this.geometry.getIndexBuffer(), "uint32");
 
@@ -339,6 +339,7 @@ fn webMercatorToSphere(x: f32, y: f32, z: f32, radius: f32) -> vec3<f32> {
 
 @vertex
 fn vs(
+  @builtin(vertex_index) vertexIndex: u32,
   @location(0) uv: vec2<f32>,
   @builtin(instance_index) instance: u32
 ) -> VSOut {
@@ -352,8 +353,10 @@ fn vs(
 
   // Read Mapzen Terrarium Elevation Data
   let elevationDims = textureDimensions(elevationAtlas);
-  let texU = u32(uv.x * f32(elevationDims.x));
-  let texV = u32(uv.y * f32(elevationDims.y));
+  
+  // Explicitly guard against UV=1.0 spilling into invalid memory space
+  let texU = min(u32(uv.x * f32(elevationDims.x)), elevationDims.x - 1u);
+  let texV = min(u32(uv.y * f32(elevationDims.y)), elevationDims.y - 1u);
   let elevTexel = textureLoad(elevationAtlas, vec2<i32>(i32(texU), i32(texV)), i32(elevationLayer), 0);
   
   // Mapzen Encoding: (R * 256 + G + B / 256) - 32768
@@ -362,12 +365,26 @@ fn vs(
   let b = elevTexel.b * 255.0;
   var elevationMeters = (r * 256.0 + g + b / 256.0) - 32768.0;
 
+  // IMPORTANT: If Texture is still downloading or failed, alpha is 0.
+  // Force elevation to 0 to prevent the tile from diving 32km underground and being backface culled!
+  if (elevTexel.a == 0.0) {
+      elevationMeters = 0.0;
+  }
+
   // Flatten oceans and exaggerate land for dramatic visual effect 
   // (Earth is VERY smooth at 1:1 scale)
   if (elevationMeters < 0.0) {
       elevationMeters = 0.0;
   }
-  let displacement = elevationMeters * 3.0;
+  
+  // Apply a dynamic geometry drop if this vertex is part of the skirt (vertex_index >= 33*33)
+  // We use 9000 meters to securely span planetary LOD cracks natively without overlap Z-fighting.
+  var skirtDrop = 0.0;
+  if (vertexIndex >= 1089u) {
+      skirtDrop = 9000.0; 
+  }
+
+  let displacement = (elevationMeters * 3.0) - skirtDrop;
 
   let worldECEF = webMercatorToSphere(globalX, globalY, f32(tile.level), 6378137.0 + displacement);
 
